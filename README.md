@@ -5,7 +5,6 @@ External or built-in tool for autoupdateing of software.
 
 Updater.jar then executed :
 
-
 1. read from config.json "version" and "server" fields
 2. then it download newconfig.json from using url provided in "server" field.
 3. it check equality of "version" fields and if there exist difference,
@@ -16,27 +15,25 @@ further update proccess will be started.
 
 # Config.json fields
 
+"version" = version number, build date, or any other integer value
 
+"server" = url with newconfig.json correspond to server for updates, must contain encoded url
 
--"version" = version number, build date, or any other integer value
+using tool like http://meyerweb.com/eric/tools/dencoder/ or something like that.
 
--"server" = url with newconfig.json correspond to server for updates, must contain encoded url
+"md5" = md5 checksum or string "off" if no md5 checking needed.
 
--using tool like http://meyerweb.com/eric/tools/dencoder/ or something like that.
+"updaterUpdated" = if updater need to be updated itself, this flag must be set to true otherwise to false
 
--"md5" = md5 checksum or string "off" if no md5 checking needed.
+"urls" = array of urls that need to be downloaded, every url need to be encoded, base correct syntax is :
 
--"updaterUpdated" = if updater need to be updated itself, this flag must be set to true otherwise to false
+"urls":["http%3A%2F%2Fexample%2Fupdate.zip","http%3A%2F%2Fexample%2Fupdate.zip","http%3A%2F%2Fexample%2Fupdate.zip"]
 
--"urls" = array of urls that need to be downloaded, every url need to be encoded, base correct syntax is :
-
--"urls":["http%3A%2F%2Fexample%2Fupdate.zip","http%3A%2F%2Fexample%2Fupdate.zip","http%3A%2F%2Fexample%2Fupdate.zip"]
-
--virtualy it dont have limit on how many files can be listed here.
+virtualy it dont have limit on how many files can be listed here.
 
 #TODO
--Simple GUI
+Simple GUI
 
--Make it work with simple url without need them to be encoded
+Make it work with simple url without need them to be encoded
 
--Working start of external programm
+Working start of external programm
