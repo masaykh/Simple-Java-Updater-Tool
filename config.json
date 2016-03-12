@@ -1,0 +1,7 @@
+{
+	"version":100,
+	"externalJar":"modlauncher.jar",
+	"updaterUpdated":false,
+	"server":"http%3A%2F%2Fwurmian.cloudapp.net%2Fnewconfig.json",
+	"urls":["http%3A%2F%2Fwurmian.cloudapp.net%2FWurmPatch1.exe","http%3A%2F%2Fwurmian.cloudapp.net%2FWurmPatch1.zip"]
+}
