@@ -1,8 +1,7 @@
 {
 	"version":101,
-	"externalJar":"modlauncher.jar",
-	"MainClass":"org.gotti.wurmunlimited.clientlauncher.ClientLauncher",
+	"md5":"off",
 	"updaterUpdated":false,
-	"server":"http%3A%2F%2Fwurmian.cloudapp.net%2Fnewconfig.json",
-	"urls":["http%3A%2F%2Fwurmian.cloudapp.net%2Fupdate.zip"]
+	"server":"http%3A%2F%2Fexample.com%2Fnewconfig.json",
+	"urls":["http%3A%2F%2Fexample.com%2Fupdate.zip"]
 }
